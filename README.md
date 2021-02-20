@@ -20,5 +20,4 @@
 - Раздел с настройками
 ```
 ### Полезные ссылки:
-- [Трекер на Trello](https://trello.com/invite/navoffice1/3cea57365f0004714d26b7c7c53159ed)
 - [Discord](https://discord.gg/TvRY6EX3wQ)
