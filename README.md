@@ -1,4 +1,5 @@
 # NaVOffice
+![logo](https://media.discordapp.net/attachments/759412243850592258/812671357048455238/jUbo5dIVwWg.png)
 ### Проект на Android Studio
 ---
 ### Общая информация:
