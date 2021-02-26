@@ -2,5 +2,9 @@
     <string name="app_name">NavOffice</string>
     <string name="map_title">Карта</string>
     <string name="settings_title">Настройки</string>
-    <string name="back_call_title">Обратная связь</string>
+    <string name="back_call_title">Список сотрдуников</string>
+    <string name="upgrade">Обновить Базу Данных</string>
+    <string name="txt1">Карта в реальном времени</string>
+    <string name="txt2">Обновить</string>
+
 </resources>
