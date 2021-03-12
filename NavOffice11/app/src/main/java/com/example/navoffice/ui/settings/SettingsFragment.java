@@ -29,15 +29,15 @@ import com.example.navoffice.R;
 
 public class SettingsFragment extends Fragment {
     public void download(Context context) {
-        String url = "https://upload.wikimedia.org/wikipedia/commons/5/5d/James_Douglas_Davison_crop.jpg";
+        String url = "https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/cG5HA1cS9UVR3w";
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE |
                 DownloadManager.Request.NETWORK_WIFI);
-        request.setTitle("timetable");
+        request.setTitle("db");
         request.setDescription("NaVOffice DB");
         request.allowScanningByMediaScanner();
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "timetable.jpg");
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "db.db");
         DownloadManager manager = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
         manager.enqueue(request);
     }
