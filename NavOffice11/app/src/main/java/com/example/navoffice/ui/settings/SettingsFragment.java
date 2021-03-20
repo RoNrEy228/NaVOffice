@@ -1,7 +1,6 @@
 package com.example.navoffice.ui.settings;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,12 +9,10 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,8 +20,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-
-import com.example.navoffice.MainActivity;
 import com.example.navoffice.R;
 
 public class SettingsFragment extends Fragment {
@@ -37,7 +32,7 @@ public class SettingsFragment extends Fragment {
         request.setDescription("NaVOffice DB");
         request.allowScanningByMediaScanner();
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
-        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "db.db");
+        request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "test.db");
         DownloadManager manager = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
         manager.enqueue(request);
     }
