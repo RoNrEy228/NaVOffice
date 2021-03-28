@@ -28,7 +28,7 @@ public class SettingsFragment extends Fragment {
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE |
                 DownloadManager.Request.NETWORK_WIFI);
-        request.setTitle("db");
+        request.setTitle("test.db");
         request.setDescription("NaVOffice DB");
         request.allowScanningByMediaScanner();
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
