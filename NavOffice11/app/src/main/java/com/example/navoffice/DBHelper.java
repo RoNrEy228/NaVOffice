@@ -3,9 +3,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Environment;
-import android.util.Log;
-
-import java.io.File;
 
 public class DBHelper  extends SQLiteOpenHelper{
 
@@ -23,9 +20,6 @@ public class DBHelper  extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase db) {
         //db.execSQL("create table " + TABLE_CONTACTS + " (" + KEY_GROUP
          //      + " integer, " + KEY_DAY + " text, " + KEY_ROOM + " text" + ");");
-        db.rawQuery("SELECT * FROM main", null);
-
-        Log.i("eww", "owjgw");
     }
 
     @Override
